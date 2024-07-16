@@ -1,0 +1,56 @@
+/* ================================= */
+/* ======= components css========= */
+/* ================================= */
+
+aside{
+    height: 100vh;
+    overflow: auto;
+    transition: all 0.4s;
+    position:fixed;
+    left: 0;
+    top:0;
+    width: inherit;
+    z-index: 1;
+}
+
+aside ul .nav-link{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+aside.close{
+left:-40%;
+transition: all 0.4s;
+}
+
+aside ul .nav-link.active{
+    background-color: white;
+    color:#0d6efd !important;
+    border-radius: 9999px 0px 0px 9999px;
+    box-shadow:0 .125rem .25rem rgba(0,0,0,.075);
+    position: relative;
+    transition:none;
+}
+
+/*rounded shape of nav link*/
+.nav-link.active::before{
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0px #fff;
+}
+
+.nav-link.nav-link.active::after{
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 15px -15px 0px #fff;
+}

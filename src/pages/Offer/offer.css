@@ -1,0 +1,21 @@
+
+#offer .card-title{
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+#offer .card h1{
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+#offer .card a{
+   width: 100%;
+   display: inline-block;
+   border-radius: 50px;
+}
+
+.red{
+    color:red;
+}
+
